@@ -9,7 +9,8 @@
   margin: 0 auto;
   border: 1px solid #21e521;
   border-radius: 10px;
-  padding-left: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   padding-bottom: 2rem;
   margin-top: 0.5em;
 }
@@ -67,6 +68,16 @@
 .other-signup-process img {
   margin-left: 0.6em;
 }
+.other-signup-process img:hover {
+  transform: scale(1.2);
+  border: 1px solid #21e521;
+  border-radius: 50%;
+  transition: transform 500ms ease;
+}
+.h4 {
+  margin-top: 1em;
+  color: #101034;
+}
 @media (max-width: 700px) {
   .signup {
     width: 90%;
@@ -83,6 +94,7 @@
   }
   .input {
     width: 250px;
+    font-size: 18px;
   }
   .input-container {
     margin-inline: 0.9em;
