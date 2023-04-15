@@ -13,7 +13,7 @@
   padding-bottom: 2rem;
   margin-top: 0.5em;
 }
-img {
+.logo img {
   width: 4rem;
 }
 .logo {
@@ -58,6 +58,14 @@ img {
   height: 40px;
   font-size: 18px;
   border: none;
+}
+.other-signup-process {
+  margin-top: 0.6em;
+  display: flex;
+  transform: translateX(10px);
+}
+.other-signup-process img {
+  margin-left: 0.6em;
 }
 @media (max-width: 700px) {
   .signup {

@@ -1,6 +1,8 @@
 import React from 'react'
 import Styled from "../Sass/Signin.module.scss"
 import Logo from "../images/download12.png"
+import Google from "../images/Google.svg"
+import Github from "../images/Gihub.svg"
 
 const Signup = () => {
    return (
@@ -21,7 +23,11 @@ const Signup = () => {
          <div className={Styled["button-container"]}>
             <button>Sign up</button>
          </div>
-      </form >
+         <div className={Styled["other-signup-process"]}>
+            <img src={Google} alt="" />
+            <img src={Github} alt="" />
+         </div>
+      </form>
    )
 }
 
