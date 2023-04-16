@@ -15,14 +15,32 @@ const Home = () => {
          <div className={HomeStyles["FirstContainer"]}>
             <div className={HomeStyles["NavigateContainer"]}>
                <div className={HomeStyles["navigate-div-container"]}>
-                  <img src={iconHome} alt="" />
-                  <img src={iconAlbum} alt="" />
-                  <img src={iconRadio} alt="" />
-                  <img src={iconVideos} alt="" />
+                  <div className={HomeStyles['img']}>
+                     <img src={iconHome} alt="" />
+                     <h4>Home</h4>
+                  </div>
+                  <div className={HomeStyles['img']}>
+                     <img src={iconAlbum} alt="" />
+                     <h4>My Collections</h4>
+                  </div>
+                  <div className={HomeStyles['img']}>
+                     <img src={iconRadio} alt="" />
+                     <h4>Radio</h4>
+                  </div>
+                  <div className={HomeStyles['img']}>
+                     <img src={iconVideos} alt="" />
+                     <h4>Music Videos</h4>
+                  </div>
                </div>
                <div className={HomeStyles["personal-info-container"]}>
-                  <img src={iconProfile} alt="" />
-                  <img src={iconLogout} alt="" />
+                  <div className={HomeStyles["img"]}>
+                     <img src={iconProfile} alt="" />
+                     <h4>Profile</h4>
+                  </div>
+                  <div className={HomeStyles["img"]}>
+                     <img src={iconLogout} alt="" />
+                     <h4>Logout</h4>
+                  </div>
                </div>
             </div>
          </div>

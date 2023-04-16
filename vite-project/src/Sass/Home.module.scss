@@ -26,6 +26,9 @@ body {
   margin-left: 30px;
   margin-top: 15px;
 }
+.img h4 {
+  display: none;
+}
 @media (max-width: 500px) {
   .navigate-container {
     position: absolute;
@@ -37,5 +40,16 @@ body {
   .navigate-div-container {
     background: none;
     gap: 5px;
+    width: 70px;
+  }
+  .img {
+    display: flex;
+  }
+  .img h4 {
+    display: initial;
+    color: white;
+    margin-left: 1rem;
+    font-size: 16px;
+    white-space: nowrap;
   }
 }
