@@ -14,9 +14,10 @@ body {
   border: 1px solid #21e521;
   border-radius: 10px;
   padding-left: 2rem;
+  padding-top: 2em;
   padding-right: 2rem;
   padding-bottom: 2rem;
-  margin-top: 0.5em;
+  min-height: 100vh;
 }
 .logo img {
   width: 4rem;
@@ -52,6 +53,7 @@ body {
   padding: 0.5em;
   margin-bottom: 0.8em;
   border: 1px solid #101034;
+  margin-top: 2.5em;
 }
 .button-container button {
   width: 80%;
@@ -63,6 +65,7 @@ body {
   height: 40px;
   font-size: 18px;
   border: none;
+  margin-top: 1.3em;
 }
 .other-signup-process {
   margin-top: 0.6em;
@@ -70,8 +73,10 @@ body {
   transform: translateX(10px);
 }
 .other-signup-process img {
-  margin-left: 0.6em;
+  margin-left: 1.2em;
+  margin-top: 1.2em;
 }
+
 .other-signup-process img:hover {
   transform: scale(1.2);
   border: 1px solid #21e521;
@@ -79,7 +84,7 @@ body {
   transition: transform 500ms ease;
 }
 .h4 {
-  margin-top: 1em;
+  margin-top: 3em;
   color: #101034;
 }
 @media (max-width: 700px) {
