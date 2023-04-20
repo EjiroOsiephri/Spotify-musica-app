@@ -17,7 +17,7 @@ import transparentLove from "../images/Stroke-1.png"
 
 const Home = () => {
 
-   const [truthy, setTruthy] = useState(false)
+   const [truthy, setTruthy] = useState(true)
 
    const toggleTruthy = () => {
       setTruthy(!truthy)
@@ -33,7 +33,7 @@ const Home = () => {
             {truthy && <motion.div className={HomeStyles['motion']}
                animate={{ y: 20 }}
                transition={{ type: "tween", stiffness: 50 }}
-            > <div className={HomeStyles["NavigateContainer"]}>
+            ><div className={HomeStyles["NavigateContainer"]}>
                   <div className={HomeStyles["navigate-div-container"]}>
                      <div className={HomeStyles['img']}>
                         <img className={HomeStyles['home-img']} src={iconHome} alt="" />

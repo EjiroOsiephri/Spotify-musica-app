@@ -10,7 +10,8 @@ body {
 .navigate-div-container {
   display: flex;
   flex-direction: column;
-  background: #1d2123;
+  background: #1a1e1f;
+  border-radius: 32px;
   gap: 12px;
   width: 52px;
   padding: 0.8em;
@@ -201,10 +202,18 @@ body {
   object-fit: contain;
   background-position: center;
 }
-.motion {
-  width: 100%;
+.navigate-div-container .home-img {
+  width: 50px;
+  margin-top: -1em;
+}
+.personal-info-container {
+  background: #1a1e1f;
+  border-radius: 32px;
 }
 @media (max-width: 968px) {
+  .motion {
+    width: 100%;
+  }
   .FirstContainer {
     flex-direction: column;
   }
@@ -237,6 +246,7 @@ body {
   .secondContainer {
     width: 90%;
     display: flex;
+    margin-left: 1em;
   }
   .imgCont img {
     height: 8rem;
@@ -290,17 +300,22 @@ body {
     margin: 0;
   }
   .thirdContainer-typo {
-    transform: translateY(-350%);
+    margin-top: -2em;
+    margin-left: 8em;
+    transform: translateY(-170px);
   }
   .thirdContainer-img img {
     margin-right: 1em;
   }
 
   .FavoriteContainer {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 0.2em;
   }
   .navigate-div-container .home-img {
     width: 50px;
+    margin-top: 0;
   }
   .img h4 {
     margin-top: 1.6em;
