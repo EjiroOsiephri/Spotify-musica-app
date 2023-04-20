@@ -201,12 +201,12 @@ body {
   object-fit: contain;
   background-position: center;
 }
-
+.motion {
+  width: 100%;
+}
 @media (max-width: 968px) {
   .FirstContainer {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   .navigate-container {
     position: absolute;
@@ -281,7 +281,7 @@ body {
   .FavoriteContainer {
     height: 233px;
     width: 400px;
-    margin-right: 1em;
+    margin-left: 0.8em;
   }
   .thirdContainer-text h1 {
     white-space: nowrap;
@@ -313,9 +313,11 @@ body {
     position: absolute;
     z-index: 5;
     background-color: #1d2123;
-    width: 100%;
-    padding: 1.5rem;
-    margin-top: -15rem;
+    padding-left: 1.5rem;
+    padding-top: -1em;
+    padding-right: 8em;
+    margin-top: -5rem;
+    padding-bottom: 1em;
   }
 }
 

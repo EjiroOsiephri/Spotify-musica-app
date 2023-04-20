@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { motion } from "framer-motion"
 import HomeStyles from "../Sass/Home.module.scss"
+import { motion } from "framer-motion"
 import NavBar from '../Components/NavBar'
 import iconHome from "../images/Vector1.png"
 import iconAlbum from "../images/Vector.png"
@@ -30,38 +30,42 @@ const Home = () => {
 
          <div className={HomeStyles["FirstContainer"]}>
 
-            {truthy && <div className={HomeStyles["NavigateContainer"]}>
-               <div className={HomeStyles["navigate-div-container"]}>
-                  <div className={HomeStyles['img']}>
-                     <img className={HomeStyles['home-img']} src={iconHome} alt="" />
-                     <h4>Home</h4>
+            {truthy && <motion.div className={HomeStyles['motion']}
+               animate={{ y: 20 }}
+               transition={{ type: "tween", stiffness: 50 }}
+            > <div className={HomeStyles["NavigateContainer"]}>
+                  <div className={HomeStyles["navigate-div-container"]}>
+                     <div className={HomeStyles['img']}>
+                        <img className={HomeStyles['home-img']} src={iconHome} alt="" />
+                        <h4>Home</h4>
+                     </div>
+                     <div className={HomeStyles['img']}>
+                        <img src={iconAlbum} alt="" />
+                        <h4>My Collections</h4>
+                     </div>
+                     <div className={HomeStyles['img']}>
+                        <img src={iconRadio} alt="" />
+                        <h4>Radio</h4>
+                     </div>
+                     <div className={HomeStyles['img']}>
+                        <img src={iconVideos} alt="" />
+                        <h4>Music Videos</h4>
+                     </div>
                   </div>
-                  <div className={HomeStyles['img']}>
-                     <img src={iconAlbum} alt="" />
-                     <h4>My Collections</h4>
-                  </div>
-                  <div className={HomeStyles['img']}>
-                     <img src={iconRadio} alt="" />
-                     <h4>Radio</h4>
-                  </div>
-                  <div className={HomeStyles['img']}>
-                     <img src={iconVideos} alt="" />
-                     <h4>Music Videos</h4>
-                  </div>
-               </div>
 
-               <div className={HomeStyles["personal-info-container"]}>
-                  <div className={HomeStyles["img"]}>
-                     <img src={iconProfile} alt="" />
-                     <h4>Profile</h4>
+                  <div className={HomeStyles["personal-info-container"]}>
+                     <div className={HomeStyles["img"]}>
+                        <img src={iconProfile} alt="" />
+                        <h4>Profile</h4>
+                     </div>
+                     <div className={HomeStyles["img"]}>
+                        <img src={iconLogout} alt="" />
+                        <h4>Logout</h4>
+                     </div>
                   </div>
-                  <div className={HomeStyles["img"]}>
-                     <img src={iconLogout} alt="" />
-                     <h4>Logout</h4>
-                  </div>
-               </div>
 
-            </div>}
+               </div></motion.div>}
+
 
             <div className={HomeStyles["secondContainer"]}>
                <div className={HomeStyles["textContainer"]}>

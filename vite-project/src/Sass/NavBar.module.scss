@@ -22,8 +22,10 @@
 }
 .fatimes {
   margin-top: 0.9em;
+  position: relative;
+  z-index: 12;
 }
-@media (max-width: 700px) {
+@media (max-width: 968px) {
   .NavBar {
     min-width: 280px;
   }
