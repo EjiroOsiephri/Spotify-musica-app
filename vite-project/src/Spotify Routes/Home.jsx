@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { motion } from "framer-motion"
 import HomeStyles from "../Sass/Home.module.scss"
 import NavBar from '../Components/NavBar'
 import iconHome from "../images/Vector1.png"
@@ -14,17 +15,25 @@ import Ellipse from "../images/Ellipse 2.png"
 import Rectangle14 from "../images/Rectangle 14.png"
 import transparentLove from "../images/Stroke-1.png"
 
-
 const Home = () => {
+
    const [truthy, setTruthy] = useState(false)
+
+   const toggleTruthy = () => {
+      setTruthy(!truthy)
+   }
+   console.log(truthy);
+
    return (
       <div className={HomeStyles["home"]}>
-         <NavBar state={truthy}></NavBar>
+         <NavBar toggleTruthy={toggleTruthy}></NavBar>
+
          <div className={HomeStyles["FirstContainer"]}>
-            <div className={HomeStyles["NavigateContainer"]}>
+
+            {truthy && <div className={HomeStyles["NavigateContainer"]}>
                <div className={HomeStyles["navigate-div-container"]}>
                   <div className={HomeStyles['img']}>
-                     <img src={iconHome} alt="" />
+                     <img className={HomeStyles['home-img']} src={iconHome} alt="" />
                      <h4>Home</h4>
                   </div>
                   <div className={HomeStyles['img']}>
@@ -40,6 +49,7 @@ const Home = () => {
                      <h4>Music Videos</h4>
                   </div>
                </div>
+
                <div className={HomeStyles["personal-info-container"]}>
                   <div className={HomeStyles["img"]}>
                      <img src={iconProfile} alt="" />
@@ -50,7 +60,9 @@ const Home = () => {
                      <h4>Logout</h4>
                   </div>
                </div>
-            </div>
+
+            </div>}
+
             <div className={HomeStyles["secondContainer"]}>
                <div className={HomeStyles["textContainer"]}>
                   <h4>Currated playlist</h4>
@@ -78,23 +90,64 @@ const Home = () => {
                   <img className={HomeStyles['bgIMAGE']} src={bgIMAGE} alt="" />
                </div>
             </div>
+
             <div className={HomeStyles["thirdContainer"]}>
                <h1>Top Charts</h1>
-               <div className={HomeStyles["FavoriteContainer"]}>
-                  <div className={HomeStyles["thirdContaner-img"]}>
-                     <img src={Rectangle14} alt="" />
-                  </div>
-                  <div className={HomeStyles["thirdContainer-text"]}>
-                     <h1>Golden age of 80s</h1>
-                     <div className={HomeStyles["textContainer-div"]}>
-                        <p>Sean swadder</p>
-                        <small>2:34:45</small>
+
+               <div className={HomeStyles['allFavContainer']}>
+
+                  <div className={HomeStyles["FavoriteContainer"]}>
+                     <div className={HomeStyles["thirdContaner-img"]}>
+                        <img src={Rectangle14} alt="" />
+                     </div>
+                     <div className={HomeStyles["thirdContainer-text"]}>
+                        <h1>Golden age of 80s</h1>
+                        <div className={HomeStyles["textContainer-div"]}>
+                           <p>Sean swadder</p>
+                           <small>2:34:45</small>
+                        </div>
+                     </div>
+                     <div className={HomeStyles["thirdContainer-typo"]}>
+                        <img src={transparentLove} alt="" />
                      </div>
                   </div>
-                  <div className={HomeStyles["thirdContainer-typo"]}>
-                     <img src={transparentLove} alt="" />
+                  {/* div no 2 */}
+                  <div className={HomeStyles["FavoriteContainer"]}>
+                     <div className={HomeStyles["thirdContaner-img"]}>
+                        <img src={Rectangle14} alt="" />
+                     </div>
+                     <div className={HomeStyles["thirdContainer-text"]}>
+                        <h1>Golden age of 80s</h1>
+                        <div className={HomeStyles["textContainer-div"]}>
+                           <p>Sean swadder</p>
+                           <small>2:34:45</small>
+                        </div>
+                     </div>
+                     <div className={HomeStyles["thirdContainer-typo"]}>
+                        <img src={transparentLove} alt="" />
+                     </div>
                   </div>
+
+                  {/* div no 3 */}
+                  <div className={HomeStyles["FavoriteContainer"]}>
+                     <div className={HomeStyles["thirdContaner-img"]}>
+                        <img src={Rectangle14} alt="" />
+                     </div>
+                     <div className={HomeStyles["thirdContainer-text"]}>
+                        <h1>Golden age of 80s</h1>
+                        <div className={HomeStyles["textContainer-div"]}>
+                           <p>Sean swadder</p>
+                           <small>2:34:45</small>
+                        </div>
+                     </div>
+                     <div className={HomeStyles["thirdContainer-typo"]}>
+                        <img src={transparentLove} alt="" />
+                     </div>
+                  </div>
+
                </div>
+
+               {/* end of allFavContainer div */}
             </div>
          </div>
       </div>

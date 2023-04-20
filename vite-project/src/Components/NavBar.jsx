@@ -6,6 +6,7 @@ import { FaBars } from 'react-icons/fa';
 const NavBar = (props) => {
 
    function showNav() {
+      props.toggleTruthy();
    }
 
    return (
