@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import HomeStyles from "../Sass/Home.module.scss"
 import { motion } from "framer-motion"
 import NavBar from '../Components/NavBar'
@@ -14,6 +14,9 @@ import Love from "../images/Vector120.png"
 import Ellipse from "../images/Ellipse 2.png"
 import Rectangle14 from "../images/Rectangle 14.png"
 import transparentLove from "../images/Stroke-1.png"
+import NewReleases from '../Components/NewReleases'
+
+
 
 const Home = () => {
 
@@ -22,7 +25,7 @@ const Home = () => {
    const toggleTruthy = () => {
       setTruthy(!truthy)
    }
-   console.log(truthy);
+
 
    return (
       <div className={HomeStyles["home"]}>
@@ -154,6 +157,7 @@ const Home = () => {
                {/* end of allFavContainer div */}
             </div>
          </div>
+         <NewReleases></NewReleases>
       </div>
    )
 }
