@@ -5,8 +5,29 @@
   font-size: 24px;
   line-height: 120%;
   color: #efeee0;
-  margin-top: 1em;
+  margin-top: 3em;
   margin-left: 2em;
+}
+.albumh4 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 15px;
+  color: #ffffff;
+  margin-bottom: 0.6em;
+  text-transform: capitalize;
+}
+.albumh3 {
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 15px;
+  color: gray;
+  margin-bottom: 0.6em;
+  text-transform: capitalize;
+  font-size: 12px;
+  text-align: center;
 }
 .image-wrapper {
   display: flex;

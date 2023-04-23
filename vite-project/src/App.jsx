@@ -9,8 +9,6 @@ import { useContext } from "react"
 
 function App() {
   const ctx = useContext(AuthContext)
-  console.log(ctx);
-
   return (
     <>
       <Routes>

@@ -15,6 +15,7 @@ import Ellipse from "../images/Ellipse 2.png"
 import Rectangle14 from "../images/Rectangle 14.png"
 import transparentLove from "../images/Stroke-1.png"
 import NewReleases from '../Components/NewReleases'
+import SearchApi from '../Components/SearchApi'
 
 
 
@@ -158,6 +159,7 @@ const Home = () => {
             </div>
          </div>
          <NewReleases></NewReleases>
+         <SearchApi></SearchApi>
       </div>
    )
 }

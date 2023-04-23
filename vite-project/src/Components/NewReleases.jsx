@@ -9,7 +9,8 @@ const NewReleases = () => {
       <>
          <h1 className={Styled["newReleases"]}>New Releases.</h1>
          <div className={Styled["image-wrapper"]}>
-            {ctx?.items?.map((item) => {
+            {ctx?.data?.items?.map((item) => {
+
                return (
                   <div className={Styled["image-wrapper-child"]} >
                      {item?.track?.album?.images.map((url) => {
@@ -17,10 +18,16 @@ const NewReleases = () => {
                            {url.height === 300 ? <img src={url.url} alt="" /> : null}
                         </div>
                      })}
+                     {item?.track?.album?.artists.map((name) => {
+                        return <div>
+                           <h4 className={Styled['albumh4']}>{name.name}</h4>
+                           <h3 className={Styled['albumh3']}>{(item?.track?.name)}</h3>
+                        </div>
+                     })}
                   </div>
                )
             })}
-         </div>
+         </div >
       </>
    )
 }
