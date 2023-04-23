@@ -1,0 +1,21 @@
+.image-wrapper-child {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  margin-top: 1em;
+}
+.search-h1 {
+  color: aliceblue;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+.image-wrapper-child img {
+  margin-right: 0.8em;
+  border-radius: 10px;
+  width: 200px;
+}
+.image-wrapper-child h1 {
+  font-size: 18px;
+  text-align: center;
+  color: aliceblue;
+}

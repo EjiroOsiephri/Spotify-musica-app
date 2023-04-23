@@ -16,7 +16,7 @@ import Rectangle14 from "../images/Rectangle 14.png"
 import transparentLove from "../images/Stroke-1.png"
 import NewReleases from '../Components/NewReleases'
 import SearchApi from '../Components/SearchApi'
-
+import AudioFiles from '../audio/AudioFiles'
 
 
 const Home = () => {
@@ -160,6 +160,7 @@ const Home = () => {
          </div>
          <NewReleases></NewReleases>
          <SearchApi></SearchApi>
+         <AudioFiles></AudioFiles>
       </div>
    )
 }
