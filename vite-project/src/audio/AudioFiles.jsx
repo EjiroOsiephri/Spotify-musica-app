@@ -2,18 +2,14 @@ import React, { useContext } from 'react';
 import AuthContext from '../Context/Context';
 import '../Sass/audiofiles.css'
 
-const AudioFiles = () => {
-   const ctx = useContext(AuthContext);
-   const previewUrl = ctx?.data?.items[0].track?.preview_url;
-
-   if (!previewUrl) {
+const AudioFiles = (props) => {
+   if (!props.music) {
       return <div>No audio available</div>;
    }
-
    return (
       <div>
-         <audio controls>
-            <source src={previewUrl} type="audio/mpeg" />
+         <audio controls autoPlay>
+            <source src={props.music} type="audio/mpeg" />
          </audio>
       </div>
    );

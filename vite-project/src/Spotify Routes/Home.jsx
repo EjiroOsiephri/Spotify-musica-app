@@ -160,7 +160,6 @@ const Home = () => {
          </div>
          <NewReleases></NewReleases>
          <SearchApi></SearchApi>
-         <AudioFiles></AudioFiles>
       </div>
    )
 }
